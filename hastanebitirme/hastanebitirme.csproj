@@ -1,0 +1,316 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FD2C7C16-84DA-4212-AAEE-F9650D4D4BD6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>hastanebitirme</RootNamespace>
+    <AssemblyName>hastanebitirme</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin.aspx" />
+    <Content Include="blog-single.aspx" />
+    <Content Include="blog.aspx" />
+    <Content Include="css\style.css" />
+    <Content Include="hakkimizda.aspx" />
+    <Content Include="html\about.html" />
+    <Content Include="html\appoinment.html" />
+    <Content Include="html\blog-sidebar.html" />
+    <Content Include="html\blog-single.html" />
+    <Content Include="html\confirmation.html" />
+    <Content Include="html\contact.html" />
+    <Content Include="html\department-single.html" />
+    <Content Include="html\department.html" />
+    <Content Include="html\doctor-single.html" />
+    <Content Include="html\doctor.html" />
+    <Content Include="html\index.html" />
+    <Content Include="html\service.html" />
+    <Content Include="iletisim.aspx" />
+    <Content Include="images\about\05.png" />
+    <Content Include="images\about\1.png" />
+    <Content Include="images\about\2.png" />
+    <Content Include="images\about\3.png" />
+    <Content Include="images\about\4.png" />
+    <Content Include="images\about\5.png" />
+    <Content Include="images\about\6.png" />
+    <Content Include="images\about\about-1.jpg" />
+    <Content Include="images\about\about-2.jpg" />
+    <Content Include="images\about\about-3.jpg" />
+    <Content Include="images\about\about-4.jpg" />
+    <Content Include="images\about\img-1.jpg" />
+    <Content Include="images\about\img-2.jpg" />
+    <Content Include="images\about\img-3.jpg" />
+    <Content Include="images\about\sign.png" />
+    <Content Include="images\bg\22.jpg" />
+    <Content Include="images\bg\banner.jpg" />
+    <Content Include="images\bg\bg-2.jpg" />
+    <Content Include="images\bg\bg-4.jpg" />
+    <Content Include="images\bg\slider-bg-1.jpg" />
+    <Content Include="images\blog\blog-1.jpg" />
+    <Content Include="images\blog\blog-2.jpg" />
+    <Content Include="images\blog\blog-4.jpg" />
+    <Content Include="images\blog\blog-6.jpg" />
+    <Content Include="images\blog\blog-7.jpg" />
+    <Content Include="images\blog\blog-8.jpg" />
+    <Content Include="images\blog\testimonial1.jpg" />
+    <Content Include="images\blog\testimonial2.jpg" />
+    <Content Include="images\favicon.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\marker.png" />
+    <Content Include="images\service\bg-1.jpg" />
+    <Content Include="images\service\service-1.jpg" />
+    <Content Include="images\service\service-2.jpg" />
+    <Content Include="images\service\service-3.jpg" />
+    <Content Include="images\service\service-4.jpg" />
+    <Content Include="images\service\service-6.jpg" />
+    <Content Include="images\service\service-8.jpg" />
+    <Content Include="images\team\1.jpg" />
+    <Content Include="images\team\2.jpg" />
+    <Content Include="images\team\3.jpg" />
+    <Content Include="images\team\4.jpg" />
+    <Content Include="images\team\test-thumb1.jpg" />
+    <Content Include="images\team\test-thumb2.jpg" />
+    <Content Include="images\team\test-thumb3.jpg" />
+    <Content Include="images\team\test-thumb4.jpg" />
+    <Content Include="js\script.js" />
+    <Content Include="kadromuz.aspx" />
+    <Content Include="MainPage.aspx" />
+    <Content Include="paneladmin.aspx" />
+    <Content Include="panelblog.aspx" />
+    <Content Include="panelgiris.aspx" />
+    <Content Include="panelkadro.aspx" />
+    <Content Include="plugins\bootstrap\bootstrap.min.css" />
+    <Content Include="plugins\bootstrap\bootstrap.min.js" />
+    <Content Include="plugins\google-map\gmap.js" />
+    <Content Include="plugins\icofont\demo.html" />
+    <Content Include="plugins\icofont\icofont.css" />
+    <Content Include="plugins\icofont\icofont.min.css" />
+    <Content Include="plugins\jquery\jquery.js" />
+    <Content Include="plugins\shuffle\shuffle.min.js" />
+    <Content Include="plugins\slick-carousel\slick\ajax-loader.gif" />
+    <Content Include="plugins\slick-carousel\slick\fonts\slick.svg" />
+    <Content Include="plugins\slick-carousel\slick\slick-theme.css" />
+    <Content Include="plugins\slick-carousel\slick\slick.css" />
+    <Content Include="plugins\slick-carousel\slick\slick.js" />
+    <Content Include="plugins\slick-carousel\slick\slick.min.js" />
+    <Content Include="screenshots\1.jpg" />
+    <Content Include="screenshots\10.jpg" />
+    <Content Include="screenshots\11.jpg" />
+    <Content Include="screenshots\2.jpg" />
+    <Content Include="screenshots\3.jpg" />
+    <Content Include="screenshots\4.jpg" />
+    <Content Include="screenshots\5.jpg" />
+    <Content Include="screenshots\6.jpg" />
+    <Content Include="screenshots\7.jpg" />
+    <Content Include="screenshots\8.jpg" />
+    <Content Include="screenshots\9.jpg" />
+    <Content Include="ShareMessage.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin.aspx.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin.aspx.designer.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="blog-single.aspx.cs">
+      <DependentUpon>blog-single.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="blog-single.aspx.designer.cs">
+      <DependentUpon>blog-single.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="blog.aspx.cs">
+      <DependentUpon>blog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="blog.aspx.designer.cs">
+      <DependentUpon>blog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="hakkimizda.aspx.cs">
+      <DependentUpon>hakkimizda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="hakkimizda.aspx.designer.cs">
+      <DependentUpon>hakkimizda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="iletisim.aspx.cs">
+      <DependentUpon>iletisim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="iletisim.aspx.designer.cs">
+      <DependentUpon>iletisim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kadromuz.aspx.cs">
+      <DependentUpon>kadromuz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kadromuz.aspx.designer.cs">
+      <DependentUpon>kadromuz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.aspx.cs">
+      <DependentUpon>MainPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainPage.aspx.designer.cs">
+      <DependentUpon>MainPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paneladmin.aspx.cs">
+      <DependentUpon>paneladmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="paneladmin.aspx.designer.cs">
+      <DependentUpon>paneladmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="panelblog.aspx.cs">
+      <DependentUpon>panelblog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="panelblog.aspx.designer.cs">
+      <DependentUpon>panelblog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="panelgiris.aspx.cs">
+      <DependentUpon>panelgiris.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="panelgiris.aspx.designer.cs">
+      <DependentUpon>panelgiris.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="panelkadro.aspx.cs">
+      <DependentUpon>panelkadro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="panelkadro.aspx.designer.cs">
+      <DependentUpon>panelkadro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShareMessage.aspx.cs">
+      <DependentUpon>ShareMessage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShareMessage.aspx.designer.cs">
+      <DependentUpon>ShareMessage.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\style.css.map" />
+    <None Include="packages.config" />
+    <Content Include="plugins\icofont\fonts\icofont.eot" />
+    <Content Include="plugins\icofont\fonts\icofont.ttf" />
+    <Content Include="plugins\icofont\fonts\icofont.woff" />
+    <Content Include="plugins\icofont\fonts\icofont.woff2" />
+    <Content Include="plugins\slick-carousel\slick\config.rb" />
+    <Content Include="plugins\slick-carousel\slick\fonts\slick.eot" />
+    <Content Include="plugins\slick-carousel\slick\fonts\slick.ttf" />
+    <Content Include="plugins\slick-carousel\slick\fonts\slick.woff" />
+    <Content Include="plugins\slick-carousel\slick\slick-theme.less" />
+    <Content Include="plugins\slick-carousel\slick\slick-theme.scss" />
+    <Content Include="plugins\slick-carousel\slick\slick.less" />
+    <Content Include="plugins\slick-carousel\slick\slick.scss" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52874</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:52874/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Bu proje bu bilgisayarda olmayan NuGet paketlerine başvuru yapıyor. Bunları indirmek için NuGet Paket Geri Yükleme'yi kullanın. Daha fazla bilgi için, bkz. http://go.microsoft.com/fwlink/?LinkID=322105. Eksik dosya: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
